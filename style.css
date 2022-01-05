@@ -2,3 +2,45 @@
 	Général
 */
 
+.trame {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+
+}
+
+
+/* 
+    Header 
+*/
+
+
+
+/*
+    Nav
+*/
+
+
+
+nav ul {
+
+}
+nav li {
+    display: inline;
+    border: 2px solid black;
+    padding: 32px;
+    margin: 32px;
+}
+
+
+
+/*
+    Réseaux
+*/
+
+.reseaux {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+    display: flex;
+}
