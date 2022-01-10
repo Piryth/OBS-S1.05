@@ -1,16 +1,54 @@
 /* 
 	Général
 */
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: font-family: 'Bebas Neue', cursive;
     font-family: 'Nunito Sans', sans-serif;
 }
 
+body {
+    background-image: url("img/cosmos.jpg");
+     margin: 0px;
+     overflow-x: hidden;
+}
+
 .trame {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    background-color: white;
     display: flex;
     flex-wrap: nowrap;
 }
 
+
+
+.trame img {
+    margin: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight:bold;
+    color: black;
+    border: 2px solid black;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background-color: black;
+    color: #f16e00;
+    transition: 0.2s ease;
+}
 
 /* 
     Header 
@@ -31,37 +69,21 @@ nav {
 }
 
 nav ul {
+    padding: 16px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
 }
 
 nav li {
     
     list-style: none;
-    
-    margin: 32px;
-    
+    margin: 14px;
+    margin-top: 30px;
 }
 
 
-.trame a {
-    text-decoration: none;
-    font-weight:bold;
-    color: black;
-    border: 2px solid black;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 24px;
-    padding-right: 24px;
-    transition: 0.2s ease;
-}
 
-.trame a:hover {
-    background-color: black;
-    color: #f16e00;
-    transition: 0.2s ease;
-}
 
 
 
@@ -71,19 +93,41 @@ nav li {
     Contenu principal
 */
 
+.void {
+    height: 180px;
+}
+
 main {
     margin-right: 15%;
     margin-left: 15%;
     display: flex;
     flex-wrap: wrap;
+    gap: 17px;
+
+}
+
+
+main article {
+    border-radius: 2px;
+    background-color: white;
+    opacity: 0.8;
+    transition: 0.1s;
+    z-index: 0;
+}
+
+main article:hover {
+    opacity: 1;
+    transition: 0.1s
 }
 
 main button {
     padding: 16px;
+    margin: 8px;
+    text-align: right;
     background-color: white;
     border: 2px solid black;
     transition: 0.2s ease;
-        font-weight: light;
+    font-weight: light;
 
 }
 
@@ -94,16 +138,28 @@ main button:hover {
     font-weight: bold;
 }
 
+main p, button, h1 {
+    margin: 20px;
+}
 
 #activite {
+
 }
 
 #services {
-    width: 50%;
+    width: 49%;
 }
 
 #valeurs {
-    width: 50%;
+    width: 49%;
+}
+
+#climat {
+    width: 49%;
+}
+
+#clients {
+    width: 49%;
 }
 
 /*
