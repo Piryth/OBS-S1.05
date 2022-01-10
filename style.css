@@ -1,12 +1,14 @@
 /* 
 	Général
 */
+* {
+    font-family: font-family: 'Bebas Neue', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 .trame {
     display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-
+    flex-wrap: nowrap;
 }
 
 
@@ -20,19 +22,89 @@
     Nav
 */
 
+header {
+    flex: 1;
+}
 
+nav {
+    flex: 5;
+}
 
 nav ul {
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+
 nav li {
-    display: inline;
-    border: 2px solid black;
-    padding: 32px;
+    
+    list-style: none;
+    
     margin: 32px;
+    
 }
 
 
+.trame a {
+    text-decoration: none;
+    font-weight:bold;
+    color: black;
+    border: 2px solid black;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: 0.2s ease;
+}
+
+.trame a:hover {
+    background-color: black;
+    color: #f16e00;
+    transition: 0.2s ease;
+}
+
+
+
+
+
+/*
+    Contenu principal
+*/
+
+main {
+    margin-right: 15%;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main button {
+    padding: 16px;
+    background-color: white;
+    border: 2px solid black;
+    transition: 0.2s ease;
+        font-weight: light;
+
+}
+
+main button:hover {
+    background-color: #f16e00;
+    color: white;
+    transition: 0.2s ease;
+    font-weight: bold;
+}
+
+
+#activite {
+}
+
+#services {
+    width: 50%;
+}
+
+#valeurs {
+    width: 50%;
+}
 
 /*
     Réseaux
