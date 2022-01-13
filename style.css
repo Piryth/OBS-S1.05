@@ -110,24 +110,26 @@ main {
 main article {
     border-radius: 2px;
     background-color: white;
-    opacity: 0.8;
+    opacity: 1;
     transition: 0.1s;
     z-index: 0;
 }
 
+
+/*
 main article:hover {
     opacity: 1;
     transition: 0.1s
-}
+}*/
 
 main button {
+    display: flex;
     padding: 16px;
     margin: 8px;
     text-align: right;
     background-color: white;
     border: 2px solid black;
     transition: 0.2s ease;
-    font-weight: light;
 
 }
 
@@ -135,7 +137,6 @@ main button:hover {
     background-color: #f16e00;
     color: white;
     transition: 0.2s ease;
-    font-weight: bold;
 }
 
 main p, button, h1 {
@@ -155,10 +156,14 @@ main p, button, h1 {
 }
 
 #climat {
-    width: 49%;
+    
 }
 
 #clients {
+    width: 49%;
+}
+
+#financement {
     width: 49%;
 }
 
@@ -166,9 +171,54 @@ main p, button, h1 {
     Réseaux
 */
 
+
+
+footer {
+    display: flex;
+    background-color: #000;
+    margin-top: 64px;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 .reseaux {
+    width : 76px;
+    height: 76px;
+    gap: 12px;
+    margin-left: 32px;
     display: flex;
-    justify-content: row;
     flex-wrap: wrap;
-    display: flex;
+    align-self: center;
+}
+
+.reseaux a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+
+#twitter {
+    margin-right: 0px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#linkedin {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#facebook {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#youtube {
+    grid-row: 2;
+    grid-column: 2;
 }
