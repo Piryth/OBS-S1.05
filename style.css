@@ -124,7 +124,8 @@ main article:hover {
 
 main button {
     display: flex;
-    padding: 16px;
+    padding: 16px 0px 16px 0px;
+    width: 150px;
     margin: 8px;
     text-align: right;
     background-color: white;
