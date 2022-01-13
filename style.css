@@ -137,6 +137,7 @@ main button {
 main button:hover {
     background-color: #f16e00;
     color: white;
+    font-weight: bold;
     transition: 0.2s ease;
 }
 
