@@ -10,7 +10,7 @@ var closeButton1 = document.getElementById("cbutton1");
 // Action en cas de clic sur le bouton
 function toggleModal() {
     modal1.classList.toggle("openmodal");
-    document.body.classList.toggle("scroll")
+    document.body.classList.toggle("scroll");
 }
 
 // Action si fenêtre modale ouverte et clic en dehors de la fenêtre modale
@@ -22,7 +22,7 @@ function windowOnClick(event) {
 
 // Définition des évènements
 trigger1.addEventListener("click", toggleModal);
-closeButton1.addEventListener("click", toggleModal)
+closeButton1.addEventListener("click", toggleModal);
 window1.addEventListener("click", windowOnClick);
 
 
@@ -39,7 +39,7 @@ var closeButton2 = document.getElementById("cbutton2");
 // Action en cas de clic sur le bouton
 function toggleModal() {
     modal2.classList.toggle("openmodal");
-    document.body.classList.toggle("scroll")
+    document.body.classList.toggle("scroll");
 }
 
 // Action si fenêtre modale ouverte et clic en dehors de la fenêtre modale
@@ -51,7 +51,7 @@ function windowOnClick(event) {
 
 // Définition des évènements
 trigger2.addEventListener("click", toggleModal);
-closeButton2.addEventListener("click", toggleModal)
+closeButton2.addEventListener("click", toggleModal);
 window2.addEventListener("click", windowOnClick);
 
 
@@ -68,7 +68,7 @@ var closeButton3 = document.getElementById("cbutton3");
 // Action en cas de clic sur le bouton
 function toggleModal() {
     modal3.classList.toggle("openmodal");
-    document.body.classList.toggle("scroll")
+    document.body.classList.toggle("scroll");
 }
 
 // Action si fenêtre modale ouverte et clic en dehors de la fenêtre modale
@@ -80,7 +80,7 @@ function windowOnClick(event) {
 
 // Définition des évènements
 trigger3.addEventListener("click", toggleModal);
-closeButton3.addEventListener("click", toggleModal)
+closeButton3.addEventListener("click", toggleModal);
 window3.addEventListener("click", windowOnClick);
 
 
@@ -97,7 +97,7 @@ var closeButton4 = document.getElementById("cbutton4");
 // Action en cas de clic sur le bouton
 function toggleModal() {
     modal4.classList.toggle("openmodal");
-    document.body.classList.toggle("scroll")
+    document.body.classList.toggle("scroll");
 }
 
 // Action si fenêtre modale ouverte et clic en dehors de la fenêtre modale
@@ -109,7 +109,7 @@ function windowOnClick(event) {
 
 // Définition des évènements
 trigger4.addEventListener("click", toggleModal);
-closeButton4.addEventListener("click", toggleModal)
+closeButton4.addEventListener("click", toggleModal);
 window4.addEventListener("click", windowOnClick);
 
 
@@ -126,7 +126,7 @@ var closeButton5 = document.getElementById("cbutton5");
 // Action en cas de clic sur le bouton
 function toggleModal() {
     modal5.classList.toggle("openmodal");
-    document.body.classList.toggle("scroll")
+    document.body.classList.toggle("scroll");
 }
 
 // Action si fenêtre modale ouverte et clic en dehors de la fenêtre modale
@@ -138,7 +138,7 @@ function windowOnClick(event) {
 
 // Définition des évènements
 trigger5.addEventListener("click", toggleModal);
-closeButton5.addEventListener("click", toggleModal)
+closeButton5.addEventListener("click", toggleModal);
 window5.addEventListener("click", windowOnClick);
 
 
@@ -155,7 +155,7 @@ var closeButton6 = document.getElementById("cbutton6");
 // Action en cas de clic sur le bouton
 function toggleModal() {
     modal6.classList.toggle("openmodal");
-    document.body.classList.toggle("scroll")
+    document.body.classList.toggle("scroll");
 }
 
 // Action si fenêtre modale ouverte et clic en dehors de la fenêtre modale
@@ -167,7 +167,7 @@ function windowOnClick(event) {
 
 // Définition des évènements
 trigger6.addEventListener("click", toggleModal);
-closeButton6.addEventListener("click", toggleModal)
+closeButton6.addEventListener("click", toggleModal);
 window6.addEventListener("click", windowOnClick);
 
 
@@ -184,7 +184,7 @@ var closeButton7 = document.getElementById("cbutton7");
 // Action en cas de clic sur le bouton
 function toggleModal() {
     modal7.classList.toggle("openmodal");
-    document.body.classList.toggle("scroll")
+    document.body.classList.toggle("scroll");
 }
 
 // Action si fenêtre modale ouverte et clic en dehors de la fenêtre modale
@@ -196,5 +196,5 @@ function windowOnClick(event) {
 
 // Définition des évènements
 trigger7.addEventListener("click", toggleModal);
-closeButton7.addEventListener("click", toggleModal)
+closeButton7.addEventListener("click", toggleModal);
 window7.addEventListener("click", windowOnClick);
