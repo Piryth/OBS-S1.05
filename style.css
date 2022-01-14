@@ -280,7 +280,7 @@ footer a {
     visibility: hidden;
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    }
+}
     .modal-content {
     position: absolute;
     top: 50%;
@@ -290,8 +290,8 @@ footer a {
     padding: 1rem 1.5rem;
     width: 24rem;
     border-radius: 0.5rem;
-    }
-    .close-button {
+}
+.close-button {
     float: right;
     width: 1rem;
     line-height: 1.5rem;
@@ -299,18 +299,19 @@ footer a {
     cursor: pointer;
     border-radius: 30px;
     background-color: #eeeeee;
-    }
-    .close-button:hover {
+}
+.close-button:hover {
     background-color: #adadad;
-    }
-    .openmodal {
+}
+
+.openmodal {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     overflow: hidden;
-    }
-    .scroll
-    {
-        overflow: hidden;
-    }
+}
+
+.scroll {
+    overflow: hidden;
+}
