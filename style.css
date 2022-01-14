@@ -303,7 +303,7 @@ footer a {
     .close-button:hover {
     background-color: #adadad;
     }
-    .test {
+    .openmodal {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
