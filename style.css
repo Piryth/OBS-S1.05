@@ -1,7 +1,6 @@
 /*
 	Général
 */
-
 html {
     scroll-behavior: smooth;
 }
@@ -19,16 +18,9 @@ body {
 
 
 
-/* 
-    Header 
-*/
-
-
-
 /*
     Nav
 */
-
 nav {
     z-index: 100;
     width: 100%;
@@ -86,13 +78,9 @@ nav ul li:nth-of-type(n+2) a:hover {
 
 
 
-
-
-
 /*
     Contenu principal
 */
-
 .void {
     height: 101px;
 }
@@ -106,12 +94,10 @@ main {
 
 }
 
-
 main article {
     background-color: white;
     opacity: 1;
 }
-
 
 main button {
     padding: 16px 0px 16px 0px;
@@ -133,12 +119,13 @@ main #obutton7 {
     width: 300px;
 }
 
+main #bbutton {
+    width: 250px;
+}
+
 main p, button, h1, dt {
     margin: 20px;
 }
-
-
-
 
 #services, #valeurs, #clients, #financement {
     flex:1;
@@ -157,9 +144,6 @@ dt {
 /*
     Footer
 */
-
-
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -183,8 +167,6 @@ footer a {
     text-decoration: none;
 }
 
-
-
 .reseaux {
     width : 76px;
     gap: 12px;
@@ -199,13 +181,11 @@ footer a {
     align-self: flex-start;
 }
 
-
 .reseaux a {
     display: block;
     width: 32px;
     height: 32px;
 }
-
 
 #twitter {
     margin-right: 0px;
@@ -228,7 +208,6 @@ footer a {
     grid-column: 2;
 }
 
-
 .autre {
     display: flex;
     flex-direction: column;
@@ -244,13 +223,16 @@ footer a {
     transition: 0.1s ease;
 }
 
-
 .autre a:hover {
     background-color: #FFF;
     color: #000;
     transition: 0.1s ease;
 }
 
+
+/*
+    Fenêtres modales
+*/
 /* Modal background */
 .modal {
     display: none;
