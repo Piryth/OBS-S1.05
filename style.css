@@ -12,10 +12,9 @@ html {
 body {
     background-image: url("img/cosmos.jpg");
     background-size: 100%;
-     margin: 0px;
-     overflow-x: hidden;
+    margin: 0px;
+    overflow-x: hidden;
 }
-
 
 
 /*
@@ -59,7 +58,7 @@ nav ul li:nth-of-type(n+2) a {
     text-decoration: none;
     font-weight:bold;
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 1);
     /* padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 24px;
@@ -81,6 +80,7 @@ nav ul li:nth-of-type(n+2) a:hover {
 /*
     Contenu principal
 */
+
 .void {
     height: 101px;
 }
@@ -109,8 +109,8 @@ main button {
 }
 
 main button:hover {
-    background-color: #f16e00;
-    color: white;
+    background-color: black;
+    color: #f16e00;
     font-weight: bold;
     transition: 0.2s ease;
 }
@@ -139,6 +139,12 @@ dt {
 .hidden-anchor {
     position: relative;
     top: -85px;
+}
+
+/* Animation quand on clique sur un bouton du nav */
+@keyframes flash {
+    0% {background-color: #f16e00;}
+    100% {background-color: white;}
 }
 
 /*
@@ -187,6 +193,11 @@ footer a {
     height: 32px;
 }
 
+.reseaux a:hover {
+    rotate: 360deg;
+    transition-duration: 500ms;
+}
+
 #twitter {
     margin-right: 0px;
     grid-row: 1;
@@ -208,6 +219,10 @@ footer a {
     grid-column: 2;
 }
 
+.partenaires a:hover, .organisation a:hover{
+    color: #f16e00;
+}
+
 .autre {
     display: flex;
     flex-direction: column;
@@ -220,13 +235,13 @@ footer a {
     border: 2px solid white;
     padding: 12px;
     text-align: center;
-    transition: 0.1s ease;
+    transition: 0.2s ease;
 }
 
 .autre a:hover {
-    background-color: #FFF;
-    color: #000;
-    transition: 0.1s ease;
+    border:2px solid #f16e00;
+    color: #f16e00;
+    transition: 0.2s ease;
 }
 
 
@@ -280,6 +295,7 @@ footer a {
     line-height: 24px;
     text-align: center;
     background-color: white;
+    color: black;
     border: 2px solid black;
     transition: 0.2s ease;
 

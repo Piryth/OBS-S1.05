@@ -1,3 +1,7 @@
+////////////////////////
+/// Fenêtres modales ///
+////////////////////////
+
 // Récupération des boutons qui ouvrent les fenêtres modales
 var obuttons = document.querySelectorAll(".obutton");
 
@@ -22,8 +26,9 @@ for (var i = 0; i < obuttons.length; i++) {
 for (var i = 0; i < cbuttons.length; i++) {
  cbuttons[i].onclick = function() {
     for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-        document.body.style.overflow = "visible";
+      if (typeof modals[index].style !== 'undefined')
+         modals[index].style.display = "none";
+         document.body.style.overflow = "visible";
     }
  }
 }
@@ -32,9 +37,27 @@ for (var i = 0; i < cbuttons.length; i++) {
 window.onclick = function(event) {
     if (event.target.classList.contains('modal')) {
      for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-        document.body.style.overflow = "visible";
+      if (typeof modals[index].style !== 'undefined')
+         modals[index].style.display = "none";
+         document.body.style.overflow = "visible";
 
      }
     }
+}
+
+///////////////////
+/// Boutons nav ///
+///////////////////
+
+// Récupérations des boutons du nav
+var navbuttons = document.querySelectorAll("nav ul li:nth-of-type(n+2) a");
+
+// Lancement de l'animation, puis reset de l'animation une fois qu'elle est terminée
+for(var i =0; i < navbuttons.length; i++) {
+   navbuttons[i].onclick = function(e) {
+      let selection = document.getElementById(e.target.getAttribute('href').substring(6));
+      selection.style.animation = "flash 1s ease-out";
+
+      setTimeout(function(){selection.style.animation = "none"}, 1000);
+   }   
 }
