@@ -93,6 +93,7 @@ main {
 main article {
     background-color: white;
     opacity: 1;
+
 }
 
 main button {
@@ -310,4 +311,85 @@ footer a {
 
     transition: 0.2s ease-in;
     cursor: pointer;
+}
+
+
+
+/* Nous contacter */
+#bbutton {
+    width: 250px;
+}
+
+#contact dt:nth-of-type(n+2) a {
+    color: #f16e00;
+    text-decoration: none;
+}
+
+form {
+    clear: both;
+    padding: 16px 24px;
+}
+
+
+form p {
+    display: block;
+}
+
+form input {
+    display: block;
+}
+
+form div {
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form div div select {
+    width: 25%;
+    height: 3em;
+    margin-right: 26%;
+
+    align-self: center;
+}
+
+form div div p {
+    display: block;
+}
+
+form div div input {
+    height: 2em;
+    width: 50%;
+
+    align-self: center;
+}
+
+@media only screen and (max-width: 1200px)  {
+
+    nav ul li:nth-of-type(n+2) a {
+        border: initial;
+        flex-wrap: nowrap;
+        padding-left: 4px;
+        padding-right: 4px;
+        
+    }
+
+    nav ul li:nth-of-type(n+2) a:hover {
+        flex-wrap: nowrap;
+        background-color: initial;
+        border: initial;
+        color: #f16e00;
+        
+    }
+
+    #services, #valeurs, #clients, #financement {
+        flex: initial;
+    }
 }
