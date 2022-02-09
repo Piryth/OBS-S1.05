@@ -45,6 +45,8 @@ window.onclick = function(event) {
     }
 }
 
+
+
 ///////////////////
 /// Boutons nav ///
 ///////////////////
@@ -61,3 +63,15 @@ for(var i =0; i < navbuttons.length; i++) {
       setTimeout(function(){selection.style.animation = "none"}, 1000);
    }   
 }
+
+/*
+for(var i = 0; i < modals.length; i++) {
+   if(modals[i].style.display == 'none') {
+      for(var j = 0; j < navbuttons.length; i++) {
+         navbuttons[i].setAttribute('href', 'none');
+      }
+
+   }
+}
+   */
+
